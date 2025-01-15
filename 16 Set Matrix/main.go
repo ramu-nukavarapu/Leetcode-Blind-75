@@ -1,13 +1,20 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	matrix := [][]int{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}
+	setZeroes(matrix)
+	fmt.Println(matrix)
+
+	matrix = [][]int{{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}}
+	setZeroes(matrix)
+	fmt.Println(matrix)
 }
 
 func setZeroesBruteforce() {
-	// take array for row and column mark if there is any zero
-	// iterate the array and modify the array accordingly
-
+	// take array's for row and column marking if there is any zero in the matrix
+	// iterate the array based on the row and column marking modify the array accordingly
 }
 
 func setZeroes(matrix [][]int) {
